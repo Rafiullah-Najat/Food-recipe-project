@@ -11,12 +11,12 @@ The project showcases a classic food recipe with a structured layout and modern 
 * Organized content (Preparation, Ingredients, Instructions, Nutrition)
 * Simple UI/UX design
 ---
-# 🛠️ Technologies Used
+## 🛠️ Technologies Used
 * HTML5
 * CSS3
 ---
 
-# 🎯 What I Learned
+## 🎯 What I Learned
 * How to structure a webpage using semantic HTML
 * Styling layouts using CSS
 * Working with custom fonts
