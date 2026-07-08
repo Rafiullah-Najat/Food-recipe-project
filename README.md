@@ -5,7 +5,7 @@ The project showcases a classic food recipe with a structured layout and modern 
 ---
 
 ## Live Demo
- Demo: <a src="https://rafiullah-najat.github.io/Food-recipe-project/">
+ Demo: https://rafiullah-najat.github.io/Food-recipe-project/
  
 ---
 
