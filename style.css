@@ -14,19 +14,23 @@
   text-align: justify;
 }
 
-body {
+main {
   /* font-family: young-serf; */
   background-color: hsl(30, 54%, 90%);
+  padding-inline: 250px;
+  padding-block: 20px;
   font-family: outfit;
 }
 
 .container {
   width: 730px;
-  height: 1680px;
   margin: 100px auto;
   background-color: hsl(0, 0%, 100%);
-  padding: 40px 50px;
+  padding: 60px 50px;
   border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
 .container img {
@@ -35,6 +39,7 @@ body {
   border-radius: 10px;
   box-shadow: 2px 2px 4px 2px black;
 }
+
 
 .container .title {
   margin: 20px 0px;
@@ -45,7 +50,7 @@ body {
 .discription {
   margin: 0px 0px 30px 0px;
 }
-.container .list-box {
+.container .prepare-list {
   width: 600px;
   height: 200px;
   margin: 20px 0px;
@@ -55,15 +60,15 @@ body {
   padding: 25px;
   border-radius: 10px;
 }
-.container .list-box h3 {
+.container .prepare-list h3 {
   font-size: 1.6em;
   margin: 0px 20px 10px 2px;
   color: hsl(332, 51%, 32%);
 }
-.container .list-box .prepare-list {
+.container .prepare-list .prepare-item {
   margin-left: 20px;
 }
-.container .list-box .prepare-list span {
+.container .prepare-list .prepare-item span {
   font-size: 1.1em;
   font-weight: bold;
 }
@@ -80,13 +85,14 @@ body {
   list-style-position: inside;
   margin: 10px;
 }
-.container ul .ingredients-list {
+.container ul .ingredients-item {
   margin: 5px;
   font-size: 1.1em;
 }
 hr {
   margin: 20px;
 }
+
 
 .container ol {
   margin: 18px;
@@ -105,6 +111,7 @@ hr {
 .container .nutrition-text {
   margin: 15px;
 }
+
 table,
 td,
 th {
@@ -112,15 +119,104 @@ th {
   width: 600px;
   border-bottom: 2px solid hsl(30, 18%, 87%);
 }
+
 table {
   border-collapse: collapse;
 }
+
 th,
 td {
   padding: 10px;
 }
+
 td {
   font-family: yyoung-serif;
   font-size: 1.2em;
   color: hsl(14, 45%, 36%);
+}
+
+
+@media screen and (max-width: 768px) {
+  main {
+    padding-inline: 20px;
+  }
+   
+  .container {
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  .image-container {
+    width: 300px;
+    margin: 20px auto;
+  }
+  .container img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  }
+
+  .container .title {
+    font-size: 1.5em;
+  }
+
+  .discription{
+    font-size: 0.9em;
+  }
+
+  .container .prepare-list{ 
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
+
+  .container .prepare-list h3{
+    font-size: 1.2em;
+  }
+
+  .container .prepare-list .prepare-item span{
+    font-size: 1em;
+  }
+
+
+  .container .prepare-list .prepare-item{
+    margin-left: 10px;
+  }
+
+  .container .ingredients-title,
+.instruction-titile,
+.nutrition {
+    font-size: 1.5em;
+  }
+
+  .container ul {
+    padding-left: 10px;
+    list-style-position: inside;
+    margin: 10px;
+  }
+  .container ul .ingredients-item {
+    margin: 5px;
+    font-size: 1em;
+  }
+
+  .instruction-list{
+    padding-block: 5px;
+  }
+
+  table,
+td,
+th {
+    margin: 10px;
+    width: 100%;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+  }
+
+  
+}
+
+
+@media screen and (max-width: 1024px){
+   main {
+    padding-inline: 20px;
+  }
 }
